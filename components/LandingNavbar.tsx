@@ -25,7 +25,7 @@ const LandingNavbar = (props: Props) => {
         <h1 className={cn("text-2xl font-bold text-white", font.className)}>HeyAI</h1>
       </Link>
       <div className='flex items-center gap-x-2'>
-        <Link href={isSignedIn ? '/dashboard' : '/login'}>
+        <Link href={isSignedIn ? '/dashboard' : '/sign-up'}>
           <Button variant='outline' className='rounded-full'>Get started!</Button>
         </Link>
       </div>
