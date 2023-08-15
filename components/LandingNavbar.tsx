@@ -8,13 +8,9 @@ import { useAuth } from '@clerk/nextjs';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 
-interface Props {
-
-}
-
 const font = Montserrat({ weight: "600", subsets: ["latin"] })
 
-const LandingNavbar = (props: Props) => {
+const LandingNavbar = () => {
   const { isSignedIn } = useAuth();
   return (
     <nav className='p-4 bg-transparent flex items-center justify-between'>
